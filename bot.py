@@ -3,7 +3,7 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
 
-TOKEN = os.environ.get('TOKEN')
+TOKEN = os.environ.get('8158874437:AAFiUlWfnct9eezmCbjrqJLRoeGgYexmGfQ')
 
 user_data_store = {}
 
