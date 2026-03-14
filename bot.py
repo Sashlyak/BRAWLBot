@@ -31,7 +31,7 @@ def calculate_price(brawler_name: str, current_trophies: int, desired_trophies: 
     if name in hard_brawlers:
         multiplier = 0.5
     elif name in very_hard_brawlers:
-        multiplier = 0.7
+        multiplier = 0.6
     price = trophy_difference * multiplier
     return round(price, 2)
 
