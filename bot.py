@@ -16,7 +16,7 @@ def calculate_price(brawler_name: str, current_trophies: int, desired_trophies: 
     if desired_trophies <= current_trophies:
         return -1
     trophy_difference = desired_trophies - current_trophies
-    price = trophy_difference * 0.5
+    price = trophy_difference * 0.3
     return round(price, 2)
 
 
