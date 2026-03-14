@@ -18,19 +18,7 @@ def calculate_price(brawler_name: str, current_trophies: int, desired_trophies: 
     trophy_difference = desired_trophies - current_trophies
     name = brawler_name.lower().strip()
     multiplier = 0.3
-    hard_brawlers = [
-        "мортис", "сэнди", "пайпер", "мэг", "бонни", "динамайк", "кольт", "гром", "базз", "корделиус", "роза", "8-бит", "белль", "финкс", "нани", "R-T"
-    ]
-
-    very_hard_brawlers = [
-        "спайк", "амбер", "честер", "меллоди", "сэнди", "тик"
-    ]
-
-    if name in hard_brawlers:
-        multiplier = 0.5
-    elif name in very_hard_brawlers:
-        multiplier = 0.6
-    price = trophy_difference * multiplier
+    price = trophy_difference * 0.3
     return round(price, 2)
 
 
